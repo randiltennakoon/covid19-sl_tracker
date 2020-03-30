@@ -51,7 +51,7 @@
     <div class="container" style="margin-top: 60px;">
         <div class="row">
             <div class="col-md text-center">
-                <div class="card bg-dark mb-3 text-white">
+                <div class="card bg-dark mb-3 text-white local">
                     <div class="card-header bg-transparent border-dark">
                         <p><i class="fas fa-hospital fa-3x"></i></p>
                     </div>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="col-md text-center">
-                <div class="card bg-danger mb-3 text-white">
+                <div class="card bg-danger mb-3 text-white local">
                     <div class="card-header bg-transparent border-danger">
                         <p><i class="fas fa-bed fa-3x"></i></p>
                     </div>
@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="col-md text-center">
-                <div class="card bg-success mb-3 text-white">
+                <div class="card bg-success mb-3 text-white local">
                     <div class="card-header bg-transparent border-success">
                         <p><i class="fas fa-running fa-3x"></i></p>
                     </div>
@@ -90,7 +90,7 @@
                 </div>
             </div>
             <div class="col-md text-center">
-                <div class="card bg-secondary mb-3 text-white">
+                <div class="card bg-secondary mb-3 text-white local">
                     <div class="card-header bg-transparent border-secondary">
                         <p><i class="fas fa-wheelchair fa-3x"></i></p>
                     </div>
@@ -108,8 +108,67 @@
         </p>
     </div>
 
+    <div class="container" style="margin-top: 40px;">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <p class="text-center lead mb-0">
+                    <span class="L">Local &ensp;</span>
+                    <label class="switch">
+                        <input type="checkbox" id="chkGlobal">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="G">&ensp; Global</span>
+                </p>
+            </div>
+        </div>
+    </div>
 
-    <div class="container" style="margin-top: 80px;">
+    <div class="container" style="margin-top: 30px; display: none;" id="global_section">
+        <div class="row">
+            <div class="col-md text-center">
+                <div class="card bg-dark mb-3 text-white global">
+                    <div class="card-header bg-transparent border-dark">
+                        <p><i class="fas fa-hospital fa-3x"></i></p>
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Total Confirmed Cases</h4>
+                    </div>
+                    <div class="card-footer bg-transparent border-dark">
+                      <h2 class="card-text total-cases-G font-weight-bold"></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md text-center">
+                <div class="card bg-danger mb-3 text-white global">
+                    <div class="card-header bg-transparent border-danger">
+                        <p><i class="fas fa-bed fa-3x"></i></p>
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Deaths<h4>
+                    </div>
+                    <div class="card-footer bg-transparent border-danger">
+                      <h2 class="card-text deaths-G font-weight-bold"></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md text-center">
+                <div class="card bg-success mb-3 text-white global">
+                    <div class="card-header bg-transparent border-success">
+                        <p><i class="fas fa-running fa-3x"></i></p>
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Recovered</h4>
+                    </div>
+                    <div class="card-footer bg-transparent border-success">
+                      <h2 class="card-text recovered-G font-weight-bold"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-top: 30px;">
         <div class="row justify-content-center">
             <div class="col-md">
                 <p class="text-center">Made with ❤ by Randil Tennakoon | Powered by hpb.health.gov.lk</p>
