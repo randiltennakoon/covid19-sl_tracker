@@ -47,7 +47,7 @@
     -webkit-transition: .4s;
     transition: .4s;
 }
- 
+
 input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
