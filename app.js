@@ -47,6 +47,7 @@ $.getJSON('https://hpb.health.gov.lk/api/get-current-statistical', function(info
             
 });
 
+
 $(function () {
     $("#chkGlobal").click(function () {
         if ($(this).is(":checked")) {
@@ -58,6 +59,7 @@ $(function () {
         }
     });
 });
+
 
 function formatNum(num){
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
