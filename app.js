@@ -47,7 +47,6 @@ $.getJSON('https://hpb.health.gov.lk/api/get-current-statistical', function(info
             
 });
 
-
 $(function () {
     $("#chkGlobal").click(function () {
         if ($(this).is(":checked")) {
