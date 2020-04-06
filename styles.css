@@ -3,10 +3,12 @@
 }
 
 .local{
-    height: 19rem;
+    height: 20rem;
+    border-radius: 25px;
 }
 .global{
-    height: 19rem;
+    height: 20rem;
+    border-radius: 25px;
 }
 
 .switch {
