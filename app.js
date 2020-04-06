@@ -22,6 +22,11 @@ $.getJSON('https://hpb.health.gov.lk/api/get-current-statistical', function(info
     var deaths_G = `${info.data.global_deaths}`
     var recv_G = `${info.data.global_recovered}`
 
+    var tot_n = `${info.data.local_new_cases}`
+    var deaths_n = `${info.data.local_new_deaths}`
+    var tot_G_n =  `${info.data.global_new_cases}`
+    var deaths_G_n = `${info.data.global_new_deaths}`
+
                         
     $(".date_time").text(date_time);
     $(".total-cases").text(tot);
@@ -29,11 +34,19 @@ $.getJSON('https://hpb.health.gov.lk/api/get-current-statistical', function(info
     $(".recovered").text(recv);
     $(".in-hospital").text(in_hos);
 
+    $(".total-cases-new").text(tot_n);
+    $(".deaths-new").text(deaths_n);
+
+
     $(".total-cases-G").text(formatNum(tot_G));
     $(".deaths-G").text(formatNum(deaths_G));
     $(".recovered-G").text(formatNum(recv_G));
+
+    $(".total-cases-G-new").text(formatNum(tot_G_n));
+    $(".deaths-G-new").text(formatNum(deaths_G_n));
             
 });
+
 
 $(function () {
     $("#chkGlobal").click(function () {
