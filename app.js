@@ -29,10 +29,10 @@ $.getJSON('https://hpb.health.gov.lk/api/get-current-statistical', function(info
 
                         
     $(".date_time").text(date_time);
-    $(".total-cases").text(tot);
+    $(".total-cases").text(formatNum(tot));
     $(".deaths").text(deaths);
-    $(".recovered").text(recv);
-    $(".in-hospital").text(in_hos);
+    $(".recovered").text(formatNum(recv));
+    $(".in-hospital").text(formatNum(in_hos));
 
     $(".total-cases-new").text(tot_n);
     $(".deaths-new").text(deaths_n);
@@ -64,3 +64,5 @@ $(function () {
 function formatNum(num){
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
 }
+
+
