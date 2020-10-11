@@ -1,4 +1,4 @@
-# COVID19 - Sri Lanka Situation Report
+# COVID19 - Sri Lanka Situation Report 🇱🇰
 
 * COVID-19 Sri Lanka dashboard created using the API released by Health Promotion Bureau of Sri Lanka (Global stats are included).
 * Dashboard can be opened via https://covid-19sl.netlify.app
