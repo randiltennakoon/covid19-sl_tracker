@@ -50,11 +50,12 @@ $.getJSON('https://hpb.health.gov.lk/api/get-current-statistical', function(info
 
 $(function () {
     $("#chkGlobal").click(function () {
+        $("#local_section, #global_section").hide();  
         if ($(this).is(":checked")) {
             $("#global_section").show(); 
             $(".G").html("<b>&ensp; Global</b>");   
         } else {
-            $("#global_section").hide();  
+            $("#local_section").show();
             $(".G").html("&ensp; Global");   
         }
     });
@@ -64,5 +65,6 @@ $(function () {
 function formatNum(num){
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
 }
+
 
 
