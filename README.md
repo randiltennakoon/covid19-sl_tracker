@@ -16,3 +16,5 @@
 * Real-time update via the API
 * Local and Global stats can be switched via a single click
 * Thousand separator for easy read
+
+
