@@ -34,14 +34,26 @@
     <!-- icon -->
     <link rel="shortcut icon" href="images/icon.png" />
 
+    <!-- Custom fonts  -->
+        <!-- main-heading  -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+        <!-- heading -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Trirong&display=swap" rel="stylesheet">
+
+        <!-- other-text -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Trirong&display=swap" rel="stylesheet">
 
   </head>
   <body>
 
     <div class="jumbotron jumbotron-fluid text-dark text-center">
         <div class="container">
-            <h1 class="display-6">COVID-19 Sri Lanka Situation Report</h1>
-            <p class="lead mb-0">Last Updated at: <br/>
+            <h1 class="main-heading"><b>COVID-19 Sri Lanka Situation Report</b></h1>
+            <p class="lead mb-0 other-text">Last Updated at: <br/>
                 <h4 class="last_updated_time text-muted"></h4>
             </p>
         </div>   
@@ -51,12 +63,12 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <p class="text-center lead mb-0">
-                    <span class="L">Local &ensp;</span>
+                    <span class="L heading">Local &ensp;</span>
                     <label class="switch">
                         <input type="checkbox" id="chkGlobal">
                         <span class="slider round"></span>
                     </label>
-                    <span class="G">&ensp; Global</span>
+                    <span class="G heading">&ensp; Global</span>
                 </p>
             </div>
         </div>
@@ -65,50 +77,50 @@
     <div class="container" style="margin-top: 30px;" id="local_section">
         <div class="row">
             <div class="col-md text-center rounded">
-                <div class="card bg-dark mb-3 text-white local">
+                <div class="card mb-3 local">
                     <div class="card-body">
                         <p><i class="fas fa-hospital fa-3x"></i></p>
-                        <h4 class="card-title">Total Confirmed Cases</h4>
-                        <h5 class="font-weight-light"> ( <span class="local_active_cases"></span>&nbsp;Active Cases ) </h5>
+                        <h4 class="card-title heading">Total Confirmed Cases</h4>
+                        <h5 class="font-weight-light"> ( <span class="local_active_cases number text-primary"></span>&nbsp;Active Cases ) </h5>
                     </div>
                     <div style="margin-bottom: 20px;">
-                        <h1 class="card-text total_confirmed_cases font-weight-bold display-4 mb-0"></h1>
-                        <h6 class="font-weight-light"><span class="local_new_cases"></span>&nbsp;Daily New Cases</h6>
+                        <h1 class="card-text text-primary total_confirmed_cases font-weight-bold display-4 mb-0 number"></h1>
+                        <h6 class="font-weight-light"><span class="local_new_cases number"></span>&nbsp;Daily New Cases</h6>
                     </div>      
                 </div>   
             </div>
             <div class="col-md text-center">
-                <div class="card bg-danger mb-3 text-white local">
+                <div class="card mb-3 local">
                     <div class="card-body"> 
                         <p><i class="fas fa-bed fa-3x"></i></p>
-                        <h4 class="card-title">Deaths</h4>
+                        <h4 class="card-title heading">Total Deaths</h4>
                     </div>
                     <div style="margin-bottom: 20px;">
-                        <h2 class="card-text total_deaths font-weight-bold display-4 mb-0"></h2>
-                        <h6 class="font-weight-light"><span class="local_new_deaths"></span>&nbsp;New Deaths</h6>
+                        <h2 class="card-text text-danger total_deaths font-weight-bold display-4 mb-0 number"></h2>
+                        <h6 class="font-weight-light"><span class="local_new_deaths number"></span>&nbsp;New Deaths</h6>
                     </div>    
                 </div>
             </div>
             <div class="col-md text-center">
-                <div class="card bg-success mb-3 text-white local">
+                <div class="card mb-3 local">
                     <div class="card-body">  
                         <p><i class="fas fa-running fa-3x"></i></p>
-                        <h4 class="card-title">Recovered & Discharged</h4>
+                        <h4 class="card-title heading">Recovered & Discharged</h4>
                     </div>   
                     <div style="margin-bottom: 40px;">
-                        <h2 class="card-text total_recovered font-weight-bold display-4"></h2>
+                        <h2 class="card-text text-success total_recovered font-weight-bold display-4 number"></h2>
                         <h6 class="font-weight-light"><span></span></h6>
                     </div>
                 </div>
             </div>
             <div class="col-md text-center">
-                <div class="card bg-warning mb-3 text-white local">
+                <div class="card mb-3 local">
                     <div class="card-body"> 
                         <p><i class="fas fa-wheelchair fa-3x"></i></p>
-                        <h4 class="card-title">Suspected & Hospitalized</h4>
+                        <h4 class="card-title heading">Suspected & Hospitalized</h4>
                     </div>    
                     <div style="margin-bottom: 45px;">
-                        <h2 class="card-text currently_in_hospital font-weight-bold display-4 mb-0"></h2>
+                        <h2 class="card-text text-warning currently_in_hospital font-weight-bold display-4 mb-0 number"></h2>
                     </div>
                 </div>
             </div>
@@ -121,31 +133,31 @@
     <div class="container" style="margin-top: 30px; display: none;" id="global_section">
         <div class="row">
             <div class="col-md text-center">
-                <div class="card bg-dark mb-3 text-white global">
+                <div class="card mb-3 global">
                     <div class="card-body">
                         <p><i class="fas fa-hospital fa-3x"></i></p>
-                        <h3 class="card-title">Total Confirmed Cases</h3>
-                        <h2 class="card-text global_total_confirmed_cases font-weight-bold display-4 mb-0" style="margin-top: 30px;"></h2>
-                        <h6 class="font-weight-light"><span class="global_new_cases"></span>&nbsp;Daily  New Cases</h6>
+                        <h3 class="card-title heading">Total Confirmed Cases</h3>
+                        <h2 class="card-text text-primary global_total_confirmed_cases font-weight-bold display-4 mb-0 number" style="margin-top: 30px;"></h2>
+                        <h6 class="font-weight-light"><span class="global_new_cases number"></span>&nbsp;Daily  New Cases</h6>
                     </div>     
                 </div>
             </div>
             <div class="col-md text-center">
-                <div class="card bg-danger mb-3 text-white global">
+                <div class="card mb-3 global">
                     <div class="card-body">
                         <p><i class="fas fa-bed fa-3x"></i></p>
-                        <h3 class="card-title">Deaths<h4>
-                        <h2 class="card-text global_total_deaths font-weight-bold display-4 mb-0" style="margin-top: 30px;"></h2>
-                        <h6 class="font-weight-light"><span class="global_new_deaths"></span>&nbsp;New Deaths</h6>
+                        <h3 class="card-title heading">Total Deaths<h4>
+                        <h2 class="card-text text-danger global_total_deaths font-weight-bold display-4 mb-0 number" style="margin-top: 30px;"></h2>
+                        <h6 class="font-weight-light"><span class="global_new_deaths number"></span>&nbsp;New Deaths</h6>
                     </div>
                 </div>
             </div>
             <div class="col-md text-center">
-                <div class="card bg-success mb-3 text-white global">
+                <div class="card mb-3 global">
                     <div class="card-body">
                         <p><i class="fas fa-running fa-3x"></i></p>
-                        <h3 class="card-title">Recovered</h3>
-                        <h2 class="card-text global_total_recovered font-weight-bold display-4 mb-0" style="margin-top: 30px; margin-bottom: 20px;"></h2>   
+                        <h3 class="card-title heading">Recovered</h3>
+                        <h2 class="card-text text-success global_total_recovered font-weight-bold display-4 mb-0 number" style="margin-top: 30px; margin-bottom: 20px;"></h2>   
                     </div>
                 </div>
             </div>

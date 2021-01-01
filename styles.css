@@ -63,3 +63,19 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+.main-heading{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.heading{
+    font-family: 'Trirong', serif;
+}
+
+.other-text{
+    font-family: 'Sofia', cursive;
+}
+
+.number{
+    font-family: 'Trirong', serif;
+}
