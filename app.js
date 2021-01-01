@@ -1,49 +1,45 @@
 $.getJSON('https://hpb.health.gov.lk/api/get-current-statistical', function(info){
 
-    /*
-    var text = `Updated at: ${info.data.update_date_time}<br>
-    Total: ${user.data.local_total_cases}<br>
-    Death: ${user.data.local_deaths}<br>
-    Recovered: ${user.data.local_recovered}<br>
-    in Hospital: ${user.data.local_total_number_of_individuals_in_hospitals}`
+    // Local Stats
+    var last_updated_time = `${info.data.update_date_time} `
+    var total_confirmed_cases = ` ${info.data.local_total_cases} `
+    var total_deaths = `${info.data.local_deaths} `
+    var total_recovered = `${info.data.local_recovered} `
+    var currently_in_hospital = `${info.data.local_total_number_of_individuals_in_hospitals} `
+    var local_active_cases = `${info.data.local_active_cases}`
 
 
-    $(".mypanel").html(text);
-
-    */
-
-    var date_time = `${info.data.update_date_time} `
-    var tot = ` ${info.data.local_total_cases} `
-    var deaths = `${info.data.local_deaths} `
-    var recv = `${info.data.local_recovered} `
-    var in_hos = `${info.data.local_total_number_of_individuals_in_hospitals} `
-
-    var tot_G = `${info.data.global_total_cases}`
-    var deaths_G = `${info.data.global_deaths}`
-    var recv_G = `${info.data.global_recovered}`
-
-    var tot_n = `${info.data.local_new_cases}`
-    var deaths_n = `${info.data.local_new_deaths}`
-    var tot_G_n =  `${info.data.global_new_cases}`
-    var deaths_G_n = `${info.data.global_new_deaths}`
-
-                        
-    $(".date_time").text(date_time);
-    $(".total-cases").text(formatNum(tot));
-    $(".deaths").text(deaths);
-    $(".recovered").text(formatNum(recv));
-    $(".in-hospital").text(formatNum(in_hos));
-
-    $(".total-cases-new").text(tot_n);
-    $(".deaths-new").text(deaths_n);
+    // Global Stats
+    var global_total_confirmed_cases = `${info.data.global_total_cases}`
+    var global_total_deaths = `${info.data.global_deaths}`
+    var global_total_recovered = `${info.data.global_recovered}`
 
 
-    $(".total-cases-G").text(formatNum(tot_G));
-    $(".deaths-G").text(formatNum(deaths_G));
-    $(".recovered-G").text(formatNum(recv_G));
+    // Daily Stats for both Local & Global
+    var local_new_cases = `${info.data.local_new_cases}`
+    var local_new_deaths = `${info.data.local_new_deaths}`
+    var global_new_cases =  `${info.data.global_new_cases}`
+    var global_new_deaths = `${info.data.global_new_deaths}`
 
-    $(".total-cases-G-new").text(formatNum(tot_G_n));
-    $(".deaths-G-new").text(formatNum(deaths_G_n));
+
+    // Connect with frontend                 
+    $(".last_updated_time").text(last_updated_time);
+    $(".total_confirmed_cases").text(formatNum(total_confirmed_cases));
+    $(".total_deaths").text(total_deaths);
+    $(".total_recovered").text(formatNum(total_recovered));
+    $(".currently_in_hospital").text(formatNum(currently_in_hospital));
+    $(".local_active_cases").text(formatNum(local_active_cases));
+
+    $(".local_new_cases").text(formatNum(local_new_cases));
+    $(".local_new_deaths").text(local_new_deaths);
+
+
+    $(".global_total_confirmed_cases").text(formatNum(global_total_confirmed_cases));
+    $(".global_total_deaths").text(formatNum(global_total_deaths));
+    $(".global_total_recovered").text(formatNum(global_total_recovered));
+
+    $(".global_new_cases").text(formatNum(global_new_cases));
+    $(".global_new_deaths").text(formatNum(global_new_deaths));
             
 });
 
