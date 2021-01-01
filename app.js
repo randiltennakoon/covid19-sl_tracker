@@ -30,7 +30,7 @@ $.getJSON('https://hpb.health.gov.lk/api/get-current-statistical', function(info
     $(".currently_in_hospital").text(formatNum(currently_in_hospital));
     $(".local_active_cases").text(formatNum(local_active_cases));
 
-    $(".local_new_cases").text(local_new_cases);
+    $(".local_new_cases").text(formatNum(local_new_cases));
     $(".local_new_deaths").text(local_new_deaths);
 
 
