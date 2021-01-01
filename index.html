@@ -41,8 +41,8 @@
     <div class="jumbotron jumbotron-fluid text-dark text-center">
         <div class="container">
             <h1 class="display-6">COVID-19 Sri Lanka Situation Report</h1>
-            <p class="lead mb-0">Last Update Time <br/>
-                <h4 class="date_time text-muted"></h4>
+            <p class="lead mb-0">Last Updated at: <br/>
+                <h4 class="last_updated_time text-muted"></h4>
             </p>
         </div>   
     </div>
@@ -69,10 +69,11 @@
                     <div class="card-body">
                         <p><i class="fas fa-hospital fa-3x"></i></p>
                         <h4 class="card-title">Total Confirmed Cases</h4>
+                        <h5 class="font-weight-light"> ( <span class="local_active_cases"></span>&nbsp;Active Cases ) </h5>
                     </div>
                     <div style="margin-bottom: 20px;">
-                        <h1 class="card-text total-cases font-weight-bold display-4 mb-0"></h1>
-                        <h6 class="font-weight-light"><span class="total-cases-new"></span>&nbsp;Daily New Cases</h6>
+                        <h1 class="card-text total_confirmed_cases font-weight-bold display-4 mb-0"></h1>
+                        <h6 class="font-weight-light"><span class="local_new_cases"></span>&nbsp;Daily New Cases</h6>
                     </div>      
                 </div>   
             </div>
@@ -83,8 +84,8 @@
                         <h4 class="card-title">Deaths</h4>
                     </div>
                     <div style="margin-bottom: 20px;">
-                        <h2 class="card-text deaths font-weight-bold display-4 mb-0"></h2>
-                        <h6 class="font-weight-light"><span class="deaths-new"></span>&nbsp;New Deaths</h6>
+                        <h2 class="card-text total_deaths font-weight-bold display-4 mb-0"></h2>
+                        <h6 class="font-weight-light"><span class="local_new_deaths"></span>&nbsp;New Deaths</h6>
                     </div>    
                 </div>
             </div>
@@ -95,7 +96,7 @@
                         <h4 class="card-title">Recovered & Discharged</h4>
                     </div>   
                     <div style="margin-bottom: 40px;">
-                        <h2 class="card-text recovered font-weight-bold display-4"></h2>
+                        <h2 class="card-text total_recovered font-weight-bold display-4"></h2>
                         <h6 class="font-weight-light"><span></span></h6>
                     </div>
                 </div>
@@ -104,10 +105,10 @@
                 <div class="card bg-warning mb-3 text-white local">
                     <div class="card-body"> 
                         <p><i class="fas fa-wheelchair fa-3x"></i></p>
-                        <h5 class="card-title">Individuals currently under investigations in hospitals</h5>
+                        <h4 class="card-title">Suspected & Hospitalized</h4>
                     </div>    
                     <div style="margin-bottom: 45px;">
-                        <h2 class="card-text in-hospital font-weight-bold display-4 mb-0"></h2>
+                        <h2 class="card-text currently_in_hospital font-weight-bold display-4 mb-0"></h2>
                     </div>
                 </div>
             </div>
@@ -124,8 +125,8 @@
                     <div class="card-body">
                         <p><i class="fas fa-hospital fa-3x"></i></p>
                         <h3 class="card-title">Total Confirmed Cases</h3>
-                        <h2 class="card-text total-cases-G font-weight-bold display-4 mb-0" style="margin-top: 30px;"></h2>
-                        <h6 class="font-weight-light"><span class="total-cases-G-new"></span>&nbsp;Daily  New Cases</h6>
+                        <h2 class="card-text global_total_confirmed_cases font-weight-bold display-4 mb-0" style="margin-top: 30px;"></h2>
+                        <h6 class="font-weight-light"><span class="global_new_cases"></span>&nbsp;Daily  New Cases</h6>
                     </div>     
                 </div>
             </div>
@@ -134,8 +135,8 @@
                     <div class="card-body">
                         <p><i class="fas fa-bed fa-3x"></i></p>
                         <h3 class="card-title">Deaths<h4>
-                        <h2 class="card-text deaths-G font-weight-bold display-4 mb-0" style="margin-top: 30px;"></h2>
-                        <h6 class="font-weight-light"><span class="deaths-G-new"></span>&nbsp;New Deaths</h6>
+                        <h2 class="card-text global_total_deaths font-weight-bold display-4 mb-0" style="margin-top: 30px;"></h2>
+                        <h6 class="font-weight-light"><span class="global_new_deaths"></span>&nbsp;New Deaths</h6>
                     </div>
                 </div>
             </div>
@@ -144,7 +145,7 @@
                     <div class="card-body">
                         <p><i class="fas fa-running fa-3x"></i></p>
                         <h3 class="card-title">Recovered</h3>
-                        <h2 class="card-text recovered-G font-weight-bold display-4 mb-0" style="margin-top: 30px; margin-bottom: 20px;"></h2>   
+                        <h2 class="card-text global_total_recovered font-weight-bold display-4 mb-0" style="margin-top: 30px; margin-bottom: 20px;"></h2>   
                     </div>
                 </div>
             </div>
