@@ -1,6 +1,15 @@
 
 .jumbotron{
-    background: #DAE3E7;
+    /* position: relative;
+    background: none;
+
+        background-color: #DAE3E7; 
+        background: #DAE3E7;  */
+
+        background: rgba(204,222, 255, .5);
+        /* color: rgba(255, 255, 255); */
+        position: relative;
+        /* padding: 50px; */
 }
 
 .local{
@@ -45,7 +54,7 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: green;
+    background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -63,3 +72,42 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+.main-heading{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.heading{
+    font-family: 'Trirong', serif;
+}
+
+.other-text{
+    font-family: 'Sofia', cursive;
+}
+
+.number{
+    font-family: 'Trirong', serif;
+}
+
+
+/*  particle.js */
+/* body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}  */
+
+#particles-js {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  /* background: teal; */
+  background: teal;
+  position: fixed;
+  z-index: -100;
+  opacity: 1
+
+}
+
+
+
