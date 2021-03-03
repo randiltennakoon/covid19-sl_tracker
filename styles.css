@@ -1,6 +1,8 @@
 
 .jumbotron{
-    background: #DAE3E7;
+    position: relative;
+    /* background: #DAE3E7; */
+    background: none;
 }
 
 .local{
@@ -81,23 +83,33 @@ input:checked + .slider:before {
 }
 
 
-/* particle.js */
+/* particle.js
 body{
     margin: 0;
     padding: 0;
     height: 100vh;
-/* 
+
     top:0px;
     left:0px;
-    z-index:1000; */
-}
-
-
+    z-index:1000; 
+} 
 
 #particles-js{
     height: 100%; 
     width: 100%;
-    /* background: teal; */
     position: fixed;
     background: teal;
+} */
+
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: teal;
+
 }
+
+
+
