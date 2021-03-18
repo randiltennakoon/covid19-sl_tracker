@@ -89,6 +89,30 @@ input:checked + .slider:before {
     font-family: 'Trirong', serif;
 }
 
+.my-portfolio a:link{
+    color: black;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.my-portfolio a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+.my-portfolio a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+.my-portfolio a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 
 /*  particle.js */
 /* body{
