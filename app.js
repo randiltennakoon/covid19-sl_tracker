@@ -25,7 +25,7 @@ $.getJSON('https://hpb.health.gov.lk/api/get-current-statistical', function(info
     // Connect with frontend                 
     $(".last_updated_time").text(last_updated_time);
     $(".total_confirmed_cases").text(formatNum(total_confirmed_cases));
-    $(".total_deaths").text(total_deaths);
+    $(".total_deaths").text(formatNum(total_deaths)); // added thousand separator 
     $(".total_recovered").text(formatNum(total_recovered));
     $(".currently_in_hospital").text(formatNum(currently_in_hospital));
     $(".local_active_cases").text(formatNum(local_active_cases));
