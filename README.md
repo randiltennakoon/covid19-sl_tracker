@@ -2,6 +2,8 @@
 
 ![covid-19sl_tracker](https://github.com/randiltennakoon/covid19-sl_tracker/blob/release-v3/images/covid-19sl_3.png?raw=true)
 
+![covid-19sl_tracker](https://github.com/randiltennakoon/covid19-sl_tracker/blob/release-v3/images/covid-19sl_global.png?raw=true)
+
 * COVID-19 Sri Lanka dashboard created using the API released by Health Promotion Bureau of Sri Lanka (Global stats are included).
 ## [Live Site](https://covid-19sl.netlify.app)
 
